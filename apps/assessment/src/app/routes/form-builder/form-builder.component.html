@@ -1,0 +1,7 @@
+<div class="form-builder">
+  {{ formService.questions$ | async | json }}
+  <button class="add-button"
+          (click)="openDialog()"
+          mat-raised-button
+          color="primary">Add new question</button>
+</div>
